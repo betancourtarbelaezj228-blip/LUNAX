@@ -16,7 +16,7 @@ body{color:var(--txt);font-family:"Outfit","Segoe UI",system-ui,sans-serif;font-
 background:radial-gradient(120% 60% at 50% -5%,#2a1170 0%,transparent 60%),radial-gradient(90% 50% at 100% 60%,#0b2a7a55 0%,transparent 70%),radial-gradient(80% 40% at 0% 90%,#6a0f7a44 0%,transparent 70%),var(--bg)}
 .stars{position:absolute;inset:0;pointer-events:none;z-index:0;background-image:radial-gradient(1.5px 1.5px at 30px 40px,#fff,transparent),radial-gradient(1px 1px at 110px 130px,#cfe,transparent),radial-gradient(2px 2px at 190px 70px,#fff9,transparent),radial-gradient(1px 1px at 70px 200px,#fff,transparent);background-size:220px 240px;opacity:.7}
 .stars.b{background-size:170px 190px;background-position:60px 40px;opacity:.45}
-@media (prefers-reduced-motion:no-preference){.float{animation:fy 5s ease-in-out infinite;will-change:transform}.sign{animation:fl 6s infinite}}
+@media (prefers-reduced-motion:no-preference){.stars{animation:tw 5s ease-in-out infinite alternate;will-change:opacity}.stars.b{animation-delay:-2.5s}.float{animation:fy 5s ease-in-out infinite;will-change:transform}.sign{animation:fl 6s infinite}}
 @keyframes tw{from{opacity:.25}to{opacity:.8}}
 @keyframes fy{50%{transform:translateY(-7px)}}
 @keyframes fl{0%,90%,100%{opacity:1}92%{opacity:.5}94%{opacity:1}96%{opacity:.65}}
@@ -115,9 +115,9 @@ footer small{display:block;margin-top:4px;color:#9fb8ff;font-size:13px}
 
 <section id="mich" class="lime">
 <div class="top"><h2>Micheladas</h2><svg class="i float"><use href="#mug"/></svg></div>
-<span class="pill">16 oz — $7.000</span>
-<div class="item"><svg><use href="#star"/></svg><div><b>Cerveza Poker</b></div></div>
-<div class="item"><svg><use href="#star"/></svg><div><b>Cerveza Pilsen</b></div></div>
+<span class="pill">16 oz</span>
+<div class="item"><svg><use href="#star"/></svg><div><b>Cerveza Poker</b></div><span class="pr" style="margin-left:auto;align-self:center">$6.000</span></div>
+<div class="item"><svg><use href="#star"/></svg><div><b>Cerveza Pilsen</b></div><span class="pr" style="margin-left:auto;align-self:center">$6.500</span></div>
 <p class="note">Opción de escarchado con chamoy.</p>
 </section>
 
